@@ -58,6 +58,7 @@ DEPENDENCIES = [
     'knack==0.3.3',
     'msrest>=0.4.4',
     'msrestazure>=0.4.25',
+    'portalocker==1.2.1',
     'paramiko',
     'pip',
     'pygments',

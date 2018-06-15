@@ -57,10 +57,11 @@ Pygments = "==2.1.3"
 "909ea2c" = {path = "./src/command_modules/azure-cli-profile", editable = true}
 "04b0b39" = {path = "./src/command_modules/azure-cli-dms", editable = true}
 "3cd971a" = {path = "./src/azure-cli", editable = true}
+"e607ea4" = {path = "./src/azure-cli-telemetry", editable = true}
+"96224e4" = {path = "./src/azure-cli-testsdk", editable = true}
 
 [dev-packages]
-"96224e4" = {path = "./src/azure-cli-testsdk", editable = true}
-"9b47c12" = {path = "./tools", editable = true}
+pylint = "==1.9.2"
 
 [requires]
 python_version = "3.6"

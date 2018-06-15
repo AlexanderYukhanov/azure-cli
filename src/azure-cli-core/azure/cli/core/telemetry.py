@@ -12,12 +12,10 @@ import re
 import sys
 import traceback
 import uuid
-import subprocess
 from collections import defaultdict
 from functools import wraps
 
 import azure.cli.core.decorators as decorators
-import azure.cli.core.telemetry_upload as telemetry_core
 
 PRODUCT_NAME = 'azurecli'
 TELEMETRY_VERSION = '0.0.1.4'
@@ -25,7 +23,7 @@ AZURE_CLI_PREFIX = 'Context.Default.AzureCLI.'
 DEFAULT_INSTRUMENTATION_KEY = 'c4395b75-49cc-422c-bc95-c7d51aef5d46'
 CORRELATION_ID_PROP_NAME = 'Reserved.DataModel.CorrelationId'
 
-decorators.is_diagnostics_mode = telemetry_core.in_diagnostic_mode
+decorators.is_diagnostics_mode = False
 
 
 class TelemetrySession(object):  # pylint: disable=too-many-instance-attributes
@@ -98,7 +96,7 @@ class TelemetrySession(object):  # pylint: disable=too-many-instance-attributes
                     'properties': props
                 })
 
-        payload = json.dumps(self.events)
+        payload = json.dumps(self.events, separators=(',', ':'))
         return _remove_symbols(payload)
 
     def _get_base_properties(self):
@@ -227,12 +225,12 @@ def start(mode=None):
 @_user_agrees_to_telemetry
 @decorators.suppress_all_exceptions(raise_in_diagnostics=True)
 def flush():
+    from azure.cli.core._environment import get_config_dir
+    from azure.cli.telemetry import save
+
     # flush out current information
     _session.end_time = datetime.datetime.utcnow()
-
-    payload = _session.generate_payload()
-    if payload:
-        _upload_telemetry_with_user_agreement(payload)
+    save(get_config_dir(), _session.generate_payload())
 
     # reset session fields, retaining correlation id and application
     _session.__init__(correlation_id=_session.correlation_id, application=_session.application)
@@ -241,37 +239,11 @@ def flush():
 @_user_agrees_to_telemetry
 @decorators.suppress_all_exceptions(raise_in_diagnostics=True)
 def conclude():
+    from azure.cli.core._environment import get_config_dir
+    from azure.cli.telemetry import save
+
     _session.end_time = datetime.datetime.utcnow()
-
-    payload = _session.generate_payload()
-    if payload:
-        kwargs = dict()
-        if os.name == 'nt':
-            # Windows process creation flag to not reuse the parent console.
-            # Without this, the background service is associated with the
-            # starting process's console, and will block that console from
-            # exiting until the background service self-terminates.
-            # Elsewhere, fork just does the right thing.
-            kwargs['creationflags'] = 0x00000010  # CREATE_NEW_CONSOLE
-
-            startupinfo = subprocess.STARTUPINFO()
-            startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-            startupinfo.wShowWindow = subprocess.SW_HIDE
-            kwargs['startupinfo'] = startupinfo
-        else:
-            if sys.version_info >= (3, 3):
-                kwargs['stdin'] = subprocess.DEVNULL
-                if not telemetry_core.in_diagnostic_mode:
-                    kwargs['stdout'] = subprocess.DEVNULL
-                    kwargs['stderr'] = subprocess.STDOUT
-        _upload_telemetry_with_user_agreement(payload, **kwargs)
-
-
-# This includes a final user-agreement-check; ALL methods sending telemetry MUST call this.
-@_user_agrees_to_telemetry
-@decorators.suppress_all_exceptions(raise_in_diagnostics=True)
-def _upload_telemetry_with_user_agreement(payload, **kwargs):
-    subprocess.Popen([sys.executable, os.path.realpath(telemetry_core.__file__), payload], **kwargs)
+    save(get_config_dir(), _session.generate_payload())
 
 
 @decorators.suppress_all_exceptions(raise_in_diagnostics=True)
@@ -399,7 +371,7 @@ def _get_config():
 
 @decorators.suppress_all_exceptions(fallback_return=None)
 def _get_core_version():
-    from azure.cli.core import __version__ as core_version
+    from . import __version__ as core_version
     return core_version
 
 
@@ -411,7 +383,7 @@ def _get_installation_id():
 @decorators.call_once
 @decorators.suppress_all_exceptions(fallback_return=None)
 def _get_profile():
-    from azure.cli.core._profile import Profile
+    from ._profile import Profile
     return Profile(cli_ctx=_session.application)
 
 

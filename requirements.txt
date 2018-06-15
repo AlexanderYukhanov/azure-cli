@@ -10,4 +10,4 @@ pyOpenSSL==16.2.0
 pyyaml==3.11
 setuptools==30.4.0
 six==1.11.0
-wheel==0.29.0
+wheel==0.30.0

@@ -19,6 +19,11 @@ CLI_PACKAGE_NAME = 'azure-cli'
 COMPONENT_PREFIX = 'azure-cli-'
 
 
+def get_config_dir():
+    import os
+    return os.getenv('AZURE_CONFIG_DIR', None) or os.path.expanduser(os.path.join('~', '.azure'))
+
+
 def handle_exception(ex):
     # For error code, follow guidelines at https://docs.python.org/2/library/sys.html#sys.exit,
     from msrestazure.azure_exceptions import CloudError

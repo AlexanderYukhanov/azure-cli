@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "94a966609e88d9d65dae9e92d66cc5331f2351e0a34c91b5682e6d7dc038c18e"
+            "sha256": "d780606fc4cf84aa98e6a23f8e3f90eb2a89047bbec69efb8141486904cbccf0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -158,10 +158,10 @@
         },
         "adal": {
             "hashes": [
-                "sha256:73967435fe2c95f4f7430e0138066e89a7536f71e5a7440835e326d310742376",
-                "sha256:c64a501674e5200bd4968436503f94bc497b3f4994854bda94a2d1332f505d98"
+                "sha256:71b0e9b479320f76af4bcd268f7359580ba2e217228e83ff7529f51a9845f393",
+                "sha256:87e439155b996bfd70b9d550ab4e932a972ef8da8e889fd2994639785c9d5ecb"
             ],
-            "version": "==1.0.0"
+            "version": "==1.0.1"
         },
         "applicationinsights": {
             "hashes": [
@@ -194,17 +194,17 @@
         },
         "azure-common": {
             "hashes": [
-                "sha256:9f158d0b1d4500af829b46dab238b52b32f3978c4ed269b9fead6554ebba4876",
-                "sha256:a60e37117684a168022af2c5e537448ad878d4ad8e45f147512eae2102f856af"
+                "sha256:3f2b0a0325b22df43ae840399a0b23c0256cb4f7deadb506a335bad516034b54",
+                "sha256:46d9d5fd8fc0d382c0ef30b253978dfc847a67cc22525884682cfe5e44e5a08b"
             ],
-            "version": "==1.1.11"
+            "version": "==1.1.12"
         },
         "azure-datalake-store": {
             "hashes": [
-                "sha256:c1cf98e1cce47e9622341845912f2ffbd41ec8a4477430e80e2cbeee88b88c07",
-                "sha256:d79995b69828c047dcc7d1ee26bd84d2c7364f15e07948a76d02842c29a7142f"
+                "sha256:2af69b0b8e65ecbefbb9003bb0b0b9cf997cd36fb20aadb951d57ff2f54a2fb9",
+                "sha256:fa5d46c2538f2679872193f9de06b11c3db306dfdfa9217fc48507498fac7356"
             ],
-            "version": "==0.0.19"
+            "version": "==0.0.22"
         },
         "azure-graphrbac": {
             "hashes": [
@@ -243,10 +243,10 @@
         },
         "azure-mgmt-batchai": {
             "hashes": [
-                "sha256:1af27922f8c7254b04c4d628d98c42e35a6a1ba858eb2678a18f1a053b6d17d2",
-                "sha256:7da355af31dcacc87f60d9efd47f97a285133d103a0b697fad43cd4981453684"
+                "sha256:b5f7df6a77fde0bd6b486762eb2c81750b6f1730ee1116689d2dfbd3e03dba95",
+                "sha256:f1870b0f97d5001cdb66208e5a236c9717a0ed18b34dbfdb238a828f3ca2a683"
             ],
-            "version": "==1.0.0"
+            "version": "==2.0.0"
         },
         "azure-mgmt-billing": {
             "hashes": [
@@ -299,10 +299,10 @@
         },
         "azure-mgmt-containerservice": {
             "hashes": [
-                "sha256:84221512228304b75cf67c8331b8af394924acecf30aff23e41564a88d1a2356",
-                "sha256:cabf729e503a47c76d31033928c9769ba5a6f1dbf73afa42436adb7226ce4e76"
+                "sha256:60977434859806a709e426c4102179c473439b80baab10770d048f44f9ac690d",
+                "sha256:ee0fc18c5cacd416d19c5f24948aebc72f8f3eec3ee5f4fb6c4d638c75f13259"
             ],
-            "version": "==3.0.1"
+            "version": "==4.1.0"
         },
         "azure-mgmt-cosmosdb": {
             "hashes": [
@@ -432,10 +432,10 @@
         },
         "azure-mgmt-network": {
             "hashes": [
-                "sha256:47ecfa1cfdb3eef5547f0ce361b692b9ad03467959148647a283bda94a0a3243",
-                "sha256:56922cd31a80bd2568aeed7839a0207d9550feb54897bbb9a2a967fed9390abd"
+                "sha256:87e5d847970a2e28437a1b0c751d8590411adf63d6917cd6fbd3d47a84a7e7ed",
+                "sha256:fbe4c58ef71a3a566f6ef17de5f0fec1be02050f692d8525b3aa25fad79143fb"
             ],
-            "version": "==2.0.0rc2"
+            "version": "==2.0.0rc3"
         },
         "azure-mgmt-nspkg": {
             "hashes": [
@@ -481,10 +481,10 @@
         },
         "azure-mgmt-reservations": {
             "hashes": [
-                "sha256:73645c247b9fb2cc39d4cdab85405e55df2e8eab5a478514be0825e253660b9d",
-                "sha256:a516216b5c416ad5b20e553cbd0c81f67692998eaee76f19bc943458d8b178a2"
+                "sha256:2b04534c6edb2a9d63d0d9b39ad96b1a92021acf50adca154a38f8518b595e90",
+                "sha256:4992619a921e74c3ecb98c0ac94e7786567b48e6b058b3f3e36645e4eb073b1c"
             ],
-            "version": "==0.1.0"
+            "version": "==0.2.0"
         },
         "azure-mgmt-resource": {
             "hashes": [
@@ -683,6 +683,10 @@
             "editable": true,
             "path": "./src/command_modules/azure-cli-servicebus"
         },
+        "e607ea4": {
+            "editable": true,
+            "path": "./src/azure-cli-telemetry"
+        },
         "ef4560e": {
             "editable": true,
             "path": "./src/command_modules/azure-cli-resource"
@@ -708,10 +712,10 @@
         },
         "idna": {
             "hashes": [
-                "sha256:2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f",
-                "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4"
+                "sha256:156a6814fb5ac1fc6850fb002e0852d56c0c8d2531923a51032d1b70760e186e",
+                "sha256:684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
             ],
-            "version": "==2.6"
+            "version": "==2.7"
         },
         "isodate": {
             "hashes": [
@@ -751,17 +755,17 @@
         },
         "msrest": {
             "hashes": [
-                "sha256:ce0a558173b7c7bff87dc66e24331382c81a89367ea52c52bbb934de6064cb45",
-                "sha256:df42272848ebbf3bc76d0e441ad28be6fadabd0983bb5c732e236620ce707e75"
+                "sha256:42549175aa25d6243d0df6d77d9a3837fa2eda2c547713e882ef82ff0719ee6e",
+                "sha256:8b0d2921f62d80ba76a264ddc0fb8cdbf8f525943e22dc47d12802ada092c2cb"
             ],
-            "version": "==0.4.29"
+            "version": "==0.5.0"
         },
         "msrestazure": {
             "hashes": [
-                "sha256:699f83cd19a098e41b723dbd9c4765ea0886ea15508f63e2709623883e4f754d",
-                "sha256:cdb9b5e0bd5947ac09d528ba4a2459607f34eb8c9a3b5d84482ccaf76f588ec0"
+                "sha256:0b3971b718be014ab3dd492719fd2db6a5085fb4bb93e5585ad46c81eda12320",
+                "sha256:6a1704d93c2d9cb977db7e806977c8aa311d313d5244c31eabea91a58f2ec25c"
             ],
-            "version": "==0.4.31"
+            "version": "==0.4.32"
         },
         "oauthlib": {
             "hashes": [
@@ -784,6 +788,13 @@
                 "sha256:a9c27eb8f0e24e786e544b2dbaedb729c9d8546342b5a6818d8eda098ad4340d"
             ],
             "version": "==4.0.4"
+        },
+        "portalocker": {
+            "hashes": [
+                "sha256:3f2a56d3d90e2ac5659ee744336e6953c0050bb61fccb97090a03de5c2a4db9f",
+                "sha256:95ec72fd36c230b92634dcffde65686e585a9a8569b9ba806dff41f56e255fbf"
+            ],
+            "version": "==1.2.1"
         },
         "prompt-toolkit": {
             "hashes": [
@@ -873,10 +884,10 @@
         },
         "requests": {
             "hashes": [
-                "sha256:6a1b267aa90cac58ac3a765d067950e7dbbf75b1da07e895d1f594193a40a38b",
-                "sha256:9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e"
+                "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
+                "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
             ],
-            "version": "==2.18.4"
+            "version": "==2.19.1"
         },
         "requests-oauthlib": {
             "hashes": [
@@ -903,10 +914,9 @@
         },
         "sshtunnel": {
             "hashes": [
-                "sha256:8e3c7fdf8b70231b6b672bc891e909905eafa50122d4be8341f60ebadc78f956",
-                "sha256:9673b26d91e8a5569e2513fc657c26b2574ccf222d1026612ba630438bceebb0"
+                "sha256:f29ae41a1bd3afa64e9a31029bece2966e4be9a9641e8262372741e691c40d76"
             ],
-            "version": "==0.1.3"
+            "version": "==0.1.4"
         },
         "tabulate": {
             "hashes": [
@@ -916,16 +926,16 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:06330f386d6e4b195fbfc736b297f58c5a892e4440e54d294d7004e3a9bbea1b",
-                "sha256:cc44da8e1145637334317feebd728bd869a35285b93cbb4cca2577da7e62db4f"
+                "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
+                "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "version": "==1.22"
+            "version": "==1.23"
         },
         "vsts-cd-manager": {
             "hashes": [
-                "sha256:a7e05a476a441d18122a3b66d4d6d6d3142f18dea75065edffc0b258cb2b0c9d"
+                "sha256:0bb09059cd553e1c206e92ef324cb0dcf92334846d646c44c684f6256b86447b"
             ],
-            "version": "==1.0.1"
+            "version": "==1.0.2"
         },
         "wcwidth": {
             "hashes": [
@@ -975,10 +985,10 @@
         },
         "adal": {
             "hashes": [
-                "sha256:73967435fe2c95f4f7430e0138066e89a7536f71e5a7440835e326d310742376",
-                "sha256:c64a501674e5200bd4968436503f94bc497b3f4994854bda94a2d1332f505d98"
+                "sha256:71b0e9b479320f76af4bcd268f7359580ba2e217228e83ff7529f51a9845f393",
+                "sha256:87e439155b996bfd70b9d550ab4e932a972ef8da8e889fd2994639785c9d5ecb"
             ],
-            "version": "==1.0.0"
+            "version": "==1.0.1"
         },
         "applicationinsights": {
             "hashes": [
@@ -1031,10 +1041,10 @@
         },
         "azure-cli": {
             "hashes": [
-                "sha256:081c3da6491749fb75222888ff862b7eb8e45c62b7ca6db56849dac8794db1a8",
-                "sha256:67b5c471a55154cbb1d7218763ad5f6a469ddfecabda64f7dba3f2f87b7e7f9c"
+                "sha256:cd469c0cdeff83b69bd60c1d07f6360f7815efdf6d09cc367ae549ea72aa4b93",
+                "sha256:ee39a831afbc2c9b13b51ed2274e87e07417b9f8b2ed7bea944a576c3864f340"
             ],
-            "version": "==2.0.35"
+            "version": "==2.0.37"
         },
         "azure-cli-acr": {
             "hashes": [
@@ -1045,10 +1055,10 @@
         },
         "azure-cli-acs": {
             "hashes": [
-                "sha256:c3aaae8acb77d43fe495e69150e7afba825426147bd7c551cea642ed3d8816bf",
-                "sha256:ec71c5e4df8eee5389acfd2523654b68217f5ffe6f4f4290ef0bc518875d6fb1"
+                "sha256:c2301a25dfbe43041aed5ab54e3c28b855a4b36822aecc747b80a2ed2ee55418",
+                "sha256:ef3ee10c14317029da4c91075718ee20a0032a27e21932dc0e75ac4a934eb263"
             ],
-            "version": "==2.0.34"
+            "version": "==2.1.0"
         },
         "azure-cli-advisor": {
             "hashes": [
@@ -1066,10 +1076,10 @@
         },
         "azure-cli-appservice": {
             "hashes": [
-                "sha256:86ba69f4d7e3da5376fc3de7a8f8108d017eda9ed8bc560c887acd6c702021ad",
-                "sha256:9f827d766d5be5dc2a0cf0cbd09848ff84fd88a4af8c7727428f29e5af1c9ed9"
+                "sha256:74e0375e0777c9453f2b0731aaf1e593f8d6cd61fa6dae6e3e743aa0ef0c49ad",
+                "sha256:c82af65f2ec60da026754d8b846a2c0c493884c25f5fa2c6da1be237c7de08a0"
             ],
-            "version": "==0.1.33"
+            "version": "==0.1.34"
         },
         "azure-cli-backup": {
             "hashes": [
@@ -1150,10 +1160,10 @@
         },
         "azure-cli-core": {
             "hashes": [
-                "sha256:68d2fc1a9f90d60a0242c22d6f1dbb3a7e0439c1202ca759a4a90ca85704580f",
-                "sha256:b189b3d96108ba126694f2d00dc8998b58102cafaacdd4278fd269ec0b1459d5"
+                "sha256:023b16539f2f31f9b9edd1ca84bafedb147f13c75ac3bbe95db36569fed70778",
+                "sha256:1fb36baab0ba469976beaa60a2c80b72b952fed3196eafd1e5395caea98755d0"
             ],
-            "version": "==2.0.35"
+            "version": "==2.0.37"
         },
         "azure-cli-cosmosdb": {
             "hashes": [
@@ -1346,17 +1356,17 @@
         },
         "azure-common": {
             "hashes": [
-                "sha256:9f158d0b1d4500af829b46dab238b52b32f3978c4ed269b9fead6554ebba4876",
-                "sha256:a60e37117684a168022af2c5e537448ad878d4ad8e45f147512eae2102f856af"
+                "sha256:3f2b0a0325b22df43ae840399a0b23c0256cb4f7deadb506a335bad516034b54",
+                "sha256:46d9d5fd8fc0d382c0ef30b253978dfc847a67cc22525884682cfe5e44e5a08b"
             ],
-            "version": "==1.1.11"
+            "version": "==1.1.12"
         },
         "azure-datalake-store": {
             "hashes": [
-                "sha256:c1cf98e1cce47e9622341845912f2ffbd41ec8a4477430e80e2cbeee88b88c07",
-                "sha256:d79995b69828c047dcc7d1ee26bd84d2c7364f15e07948a76d02842c29a7142f"
+                "sha256:2af69b0b8e65ecbefbb9003bb0b0b9cf997cd36fb20aadb951d57ff2f54a2fb9",
+                "sha256:fa5d46c2538f2679872193f9de06b11c3db306dfdfa9217fc48507498fac7356"
             ],
-            "version": "==0.0.19"
+            "version": "==0.0.22"
         },
         "azure-devtools": {
             "hashes": [
@@ -1402,10 +1412,10 @@
         },
         "azure-mgmt-batchai": {
             "hashes": [
-                "sha256:1af27922f8c7254b04c4d628d98c42e35a6a1ba858eb2678a18f1a053b6d17d2",
-                "sha256:7da355af31dcacc87f60d9efd47f97a285133d103a0b697fad43cd4981453684"
+                "sha256:b5f7df6a77fde0bd6b486762eb2c81750b6f1730ee1116689d2dfbd3e03dba95",
+                "sha256:f1870b0f97d5001cdb66208e5a236c9717a0ed18b34dbfdb238a828f3ca2a683"
             ],
-            "version": "==1.0.0"
+            "version": "==2.0.0"
         },
         "azure-mgmt-billing": {
             "hashes": [
@@ -1458,10 +1468,10 @@
         },
         "azure-mgmt-containerservice": {
             "hashes": [
-                "sha256:84221512228304b75cf67c8331b8af394924acecf30aff23e41564a88d1a2356",
-                "sha256:cabf729e503a47c76d31033928c9769ba5a6f1dbf73afa42436adb7226ce4e76"
+                "sha256:60977434859806a709e426c4102179c473439b80baab10770d048f44f9ac690d",
+                "sha256:ee0fc18c5cacd416d19c5f24948aebc72f8f3eec3ee5f4fb6c4d638c75f13259"
             ],
-            "version": "==3.0.1"
+            "version": "==4.1.0"
         },
         "azure-mgmt-cosmosdb": {
             "hashes": [
@@ -1584,10 +1594,10 @@
         },
         "azure-mgmt-network": {
             "hashes": [
-                "sha256:47ecfa1cfdb3eef5547f0ce361b692b9ad03467959148647a283bda94a0a3243",
-                "sha256:56922cd31a80bd2568aeed7839a0207d9550feb54897bbb9a2a967fed9390abd"
+                "sha256:87e5d847970a2e28437a1b0c751d8590411adf63d6917cd6fbd3d47a84a7e7ed",
+                "sha256:fbe4c58ef71a3a566f6ef17de5f0fec1be02050f692d8525b3aa25fad79143fb"
             ],
-            "version": "==2.0.0rc2"
+            "version": "==2.0.0rc3"
         },
         "azure-mgmt-nspkg": {
             "hashes": [
@@ -1626,10 +1636,10 @@
         },
         "azure-mgmt-reservations": {
             "hashes": [
-                "sha256:73645c247b9fb2cc39d4cdab85405e55df2e8eab5a478514be0825e253660b9d",
-                "sha256:a516216b5c416ad5b20e553cbd0c81f67692998eaee76f19bc943458d8b178a2"
+                "sha256:2b04534c6edb2a9d63d0d9b39ad96b1a92021acf50adca154a38f8518b595e90",
+                "sha256:4992619a921e74c3ecb98c0ac94e7786567b48e6b058b3f3e36645e4eb073b1c"
             ],
-            "version": "==0.1.0"
+            "version": "==0.2.0"
         },
         "azure-mgmt-resource": {
             "hashes": [
@@ -1912,10 +1922,10 @@
         },
         "idna": {
             "hashes": [
-                "sha256:2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f",
-                "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4"
+                "sha256:156a6814fb5ac1fc6850fb002e0852d56c0c8d2531923a51032d1b70760e186e",
+                "sha256:684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
             ],
-            "version": "==2.6"
+            "version": "==2.7"
         },
         "isodate": {
             "hashes": [
@@ -2004,17 +2014,17 @@
         },
         "msrest": {
             "hashes": [
-                "sha256:ce0a558173b7c7bff87dc66e24331382c81a89367ea52c52bbb934de6064cb45",
-                "sha256:df42272848ebbf3bc76d0e441ad28be6fadabd0983bb5c732e236620ce707e75"
+                "sha256:42549175aa25d6243d0df6d77d9a3837fa2eda2c547713e882ef82ff0719ee6e",
+                "sha256:8b0d2921f62d80ba76a264ddc0fb8cdbf8f525943e22dc47d12802ada092c2cb"
             ],
-            "version": "==0.4.29"
+            "version": "==0.5.0"
         },
         "msrestazure": {
             "hashes": [
-                "sha256:699f83cd19a098e41b723dbd9c4765ea0886ea15508f63e2709623883e4f754d",
-                "sha256:cdb9b5e0bd5947ac09d528ba4a2459607f34eb8c9a3b5d84482ccaf76f588ec0"
+                "sha256:0b3971b718be014ab3dd492719fd2db6a5085fb4bb93e5585ad46c81eda12320",
+                "sha256:6a1704d93c2d9cb977db7e806977c8aa311d313d5244c31eabea91a58f2ec25c"
             ],
-            "version": "==0.4.31"
+            "version": "==0.4.32"
         },
         "multidict": {
             "hashes": [
@@ -2208,10 +2218,10 @@
         },
         "requests": {
             "hashes": [
-                "sha256:6a1b267aa90cac58ac3a765d067950e7dbbf75b1da07e895d1f594193a40a38b",
-                "sha256:9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e"
+                "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
+                "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
             ],
-            "version": "==2.18.4"
+            "version": "==2.19.1"
         },
         "requests-oauthlib": {
             "hashes": [
@@ -2238,10 +2248,9 @@
         },
         "sshtunnel": {
             "hashes": [
-                "sha256:8e3c7fdf8b70231b6b672bc891e909905eafa50122d4be8341f60ebadc78f956",
-                "sha256:9673b26d91e8a5569e2513fc657c26b2574ccf222d1026612ba630438bceebb0"
+                "sha256:f29ae41a1bd3afa64e9a31029bece2966e4be9a9641e8262372741e691c40d76"
             ],
-            "version": "==0.1.3"
+            "version": "==0.1.4"
         },
         "tabulate": {
             "hashes": [
@@ -2251,10 +2260,10 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:06330f386d6e4b195fbfc736b297f58c5a892e4440e54d294d7004e3a9bbea1b",
-                "sha256:cc44da8e1145637334317feebd728bd869a35285b93cbb4cca2577da7e62db4f"
+                "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
+                "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "version": "==1.22"
+            "version": "==1.23"
         },
         "vcrpy": {
             "hashes": [
@@ -2265,9 +2274,9 @@
         },
         "vsts-cd-manager": {
             "hashes": [
-                "sha256:a7e05a476a441d18122a3b66d4d6d6d3142f18dea75065edffc0b258cb2b0c9d"
+                "sha256:0bb09059cd553e1c206e92ef324cb0dcf92334846d646c44c684f6256b86447b"
             ],
-            "version": "==1.0.1"
+            "version": "==1.0.2"
         },
         "wcwidth": {
             "hashes": [
@@ -2320,18 +2329,18 @@
         },
         "yarl": {
             "hashes": [
-                "sha256:135f8cc72e4f46bbdca229e1fbc9960e984a16488dd3367431ddb7501f9cc507",
-                "sha256:3dc28e1d2a0a8bcc44715d284c816725e310c178626692073ecdc4eb11a853d0",
-                "sha256:40632b38f355cec13c3760bbc5943075997c4592bbc765c3b83df1df0a7eca08",
-                "sha256:7e03ce8595522aa1c234a2b42d643be55f796e546d0f36700a1cb02dbe24e147",
-                "sha256:83ee1bbb20c96fdf5e3a5d9681624cdcde2abe3bb985361140c29dfb3788b008",
-                "sha256:ae20db1fbc7fff7d7dffd38ab1a2b83dd76157b138b80b813931a8e302cd4d7e",
-                "sha256:cead78320aaa21601435cfc04ed0eff14df39800e93b79d7374562cafa9be2fa",
-                "sha256:cfccc464e1502028d225f694b05b70053d9872a2b81f872fd79b0d0a399e87e8",
-                "sha256:dd5da4150a882f5cd26aeec7939f38e4b08b790717b9d696409dba9e18ff3ab6"
+                "sha256:2556b779125621b311844a072e0ed367e8409a18fa12cbd68eb1258d187820f9",
+                "sha256:4aec0769f1799a9d4496827292c02a7b1f75c0bab56ab2b60dd94ebb57cbd5ee",
+                "sha256:55369d95afaacf2fa6b49c84d18b51f1704a6560c432a0f9a1aeb23f7b971308",
+                "sha256:6c098b85442c8fe3303e708bbb775afd0f6b29f77612e8892627bcab4b939357",
+                "sha256:9182cd6f93412d32e009020a44d6d170d2093646464a88aeec2aef50592f8c78",
+                "sha256:c8cbc21bbfa1dd7d5386d48cc814fe3d35b80f60299cdde9279046f399c3b0d8",
+                "sha256:db6f70a4b09cde813a4807843abaaa60f3b15fb4a2a06f9ae9c311472662daa1",
+                "sha256:f17495e6fe3d377e3faac68121caef6f974fcb9e046bc075bcff40d8e5cc69a4",
+                "sha256:f85900b9cca0c67767bb61b2b9bd53208aaa7373dae633dbe25d179b4bf38aa7"
             ],
             "markers": "python_version >= '3.4'",
-            "version": "==1.2.5"
+            "version": "==1.2.6"
         }
     }
 }
